@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrao ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <script defer type="module" src="./ASSETS/JS/script.js"></script>
+</head>
+<body>
+    <header class="bg-dark container-fluid text-center text-light m-auto py-3" role="banner">
+        <p class="pt-2 fs-3" aria-level="1">ToDo-List</p>
+    </header>
+    <main class="fondo" role="main">
+        <section id="hero" class="py-4 container-fluid d-flex flex-column justify-content-center align-items-center text-light" aria-labelledby="hero-heading">
+            <h1 id="hero-heading">✨Organiza tu vida en minutos✨</h1>
+            <p>La lista de tareas más intuitiva para alcanzar tus metas sin estrés.</p>
+            <p class="fw-bold"> Simple • Rápida • Potente</p>
+        </section>
+        <div class="wrap bg-dark text-light">
+            <section class="container p-5" aria-labelledby="form-heading">
+                <h2 id="form-heading" class="visually-hidden">Formulario de tareas</h2>
+                <form id="formToDo">
+                    <div class="mb-3">
+                        <label for="tarea" class="form-label">Tarea: </label>
+                        <input type="text" class="form-control" id="tarea" aria-required="true" placeholder="Ingrese la descripción de la tarea">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Fecha Límite: </label>
+                        <input type="date" class="form-control" id="fecha" aria-required="true" aria-describedby="fecha-help">
+                        <div id="fecha-help" class="visually-hidden">Seleccione una fecha futura</div>
+                    </div>
+                    <button id="btnAgregar" type="submit" class="btn btn-primary" aria-label="Agregar nueva tarea">
+                        <i class="bi bi-clipboard" aria-hidden="true"></i> Agregar Tarea
+                    </button>
+                </form>
+            </section>
+            <hr aria-hidden="true">
+            <section class="container pb-5" aria-labelledby="filtros-heading">
+                <div class="text-center p-2">
+                    <h2 id="filtros-heading">Filtrar Tareas:</h2>
+                    <div class="filtrar container d-flex">
+                        <input id="filtro" class="form-control rounded-start rounded-end-0" type="text" 
+                            aria-label="Texto para filtrar tareas" placeholder="Buscar tareas...">
+                        <button id="btnFiltrar" class="btn btn-primary rounded-start-0 rounded-end" aria-label="Filtrar lista de tareas">
+                            Filtrar
+                        </button>
+                    </div>
+                    <div class="container mt-4">
+                        <button id="btnElimCompletados" class="btn btn-danger" aria-label="Eliminar tareas completadas">
+                            <i class="bi bi-clipboard-check" aria-hidden="true"></i> Eliminar Completados
+                        </button>
+                        <button id="btnMostrarTodos" class="btn btn-primary" aria-label="Mostrar todas las tareas">
+                            <i class="bi bi-list" aria-hidden="true"></i> Mostrar Todos
+                        </button>
+                    </div>
+                </div>
+                <h2 id="tareas-heading" class="text-center mt-4 mb-3">Tareas</h2>
+                <div id="todolist" class="container pt-3 rounded" role="list" aria-labelledby="tareas-heading">
+                    <!-- Las tareas individuales tendrán role="listitem" -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
