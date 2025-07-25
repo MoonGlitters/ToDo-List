@@ -31,12 +31,19 @@ Cuenta con librerías como jQuery y frameworks que aceleran el desarrollo.
 Crea interfaces fluidas como menús desplegables, carruseles de imágenes y Single Page Applications (SPAs).
 
 # Ejemplos de funcionalidades posibles gracias a JavaScript
+
 🔹 Validación de formularios en tiempo real antes de enviar datos al servidor.
+
 🔹 Listas dinámicas en las que permite filtrar, ordenar o agregar elementos a una lista sin recargar.
+
 🔹 Animaciones y efectos: Scroll suave, sliders, galerías interactivas.
+
 🔹 Actualizaciones asíncronas: Cargar nuevos tweets en Twitter o mensajes en chats sin refrescar.
+
 🔹 Drag & Drop: Interfaces arrastrables.
+
 🔹 Geolocalización: Mostrar mapas o contenido basado en la ubicación del usuario.
+
 🔹 Almacenamiento local: Guardar preferencias del usuario con localStorage o sessionStorage.
 
 # TODO-LIST - Gestor de Tareas
@@ -59,7 +66,7 @@ Una aplicación web intuitiva diseñada para ayudarte a organizar tus tareas dia
 
 3. Eliminar tareas individualmente
 
-🔹 Botón de eliminación (🗑️) para quitar tareas no deseadas.
+🔹 Botón de eliminación para quitar tareas no deseadas.
 
 4. Limpiar tareas completadas
 
@@ -80,8 +87,40 @@ Una aplicación web intuitiva diseñada para ayudarte a organizar tus tareas dia
 
 ## Interfaz de Usuario (UI/UX)
 
-🔹Simple y sencilla
-🔹De facil uso y intuitiva con el usuario
+1. Diseño Simple y Minimalista
+
+🔹Enfoque en la usabilidad: Sin distracciones, centrado en la funcionalidad principal.
+
+🔹Tipografía clara: Texto legible con jerarquía visual.
+
+2. Experiencia Intuitiva
+
+🔹Animaciones sutiles al momento de completar o eliminar tareas
+
+3. Responsive Design
+
 🔹Responsiva tanto para computadores de escritorio o moviles
-🔹Uso de accesibilidad
+
+4. Accesibilidad (A11y)
+
+🔹Elementos semánticos: Uso de <button>, <input> con etiquetas claras.
+
+🔹ARIA attributes: Roles y estados para lectores de pantalla.
+
+## Bibliotecas utilizadas
+
+🔹JQUERY
+
+🔹Bootstrap
+
+🔹Notyf
+
+## Lenguajes
+
+🔹JavaScript
+
+🔹HTML
+
+🔹CSS
+
 
